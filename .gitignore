@@ -1,6 +1,4 @@
 # ─── Python ───────────────────────────────────────────────────────────────────
-app/services/__pycache__/*
-**/**/__pycache__
 __pycache__/
 *.py[cod]
 *.pyo
@@ -160,3 +158,4 @@ Session.vim
 
 # Cursor
 .cursor/
+backend/app/api/v1/__pycache__/router.cpython-313.pyc

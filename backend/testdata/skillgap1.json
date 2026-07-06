@@ -1,0 +1,33 @@
+{
+  "skillId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "userId": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+  "username": "arjun_dev",
+  "email": "arjun.dev@example.com",
+  "currentRole": "Java Backend Developer",
+  "targetRole": "AI Engineer",
+  "skills": {
+    "Java": 9,
+    "Spring Boot": 8,
+    "SQL": 7,
+    "REST APIs": 8,
+    "Data Structures & Algorithms": 8,
+    "Python": 4,
+    "Machine Learning": 2,
+    "Deep Learning": 1,
+    "Statistics": 3
+  },
+  "skillGaps": [
+    { "skill": "Python", "requiredLevel": 8 },
+    { "skill": "Machine Learning", "requiredLevel": 8 },
+    { "skill": "Deep Learning", "requiredLevel": 7 },
+    { "skill": "Statistics & Probability", "requiredLevel": 7 },
+    { "skill": "Data Preprocessing & Pandas", "requiredLevel": 7 },
+    { "skill": "PyTorch / TensorFlow", "requiredLevel": 7 },
+    { "skill": "MLOps & Model Deployment", "requiredLevel": 6 },
+    { "skill": "LLMs & Prompt Engineering", "requiredLevel": 6 }
+  ],
+  "roleAlignment": "MISALIGNED",
+  "resumePath": "3fa85f64-5717-4562-b3fc-2c963f66afa6/resume.pdf",
+  "status": "COMPLETED",
+  "createdAt": "2026-07-06T13:27:27.709Z"
+}

@@ -24,7 +24,7 @@ class RoadmapRepository:
                 .execute()
             )
         except Exception as exc:
-            raise DatabaseException() from exc
+            raise DatabaseException(f"Failed to fetch roadmap for user {user_id}: {str(exc)}") from exc
         data = result.data
         return data[0] if data else None
 
@@ -34,5 +34,5 @@ class RoadmapRepository:
         try:
             result = await sb.table(ROADMAP_TABLE).insert(data).execute()
         except Exception as exc:
-            raise DatabaseException() from exc
+            raise DatabaseException(f"Failed to create roadmap: {str(exc)}") from exc
         return result.data[0]
