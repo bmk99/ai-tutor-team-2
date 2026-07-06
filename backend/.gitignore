@@ -1,0 +1,3 @@
+.env
+app/api/v1/__pycache__
+**/__pycache__

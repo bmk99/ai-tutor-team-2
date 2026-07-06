@@ -17,14 +17,6 @@ class DatabaseException(AppException):
         super().__init__(status_code=500, detail=detail)
 
 
-class SkillProfileNotFoundException(AppException):
-    def __init__(self, user_id: str):
-        super().__init__(
-            status_code=404,
-            detail=f"Skill profile for user '{user_id}' not found",
-        )
-
-
 class RoadmapNotFoundException(AppException):
     def __init__(self, employee_id: str):
         super().__init__(
@@ -55,6 +47,11 @@ class LLMException(AppException):
             status_code=500,
             detail=f"LLM/embedding error: {detail}",
         )
+
+
+class WorkflowInputException(AppException):
+    def __init__(self, detail: str):
+        super().__init__(status_code=422, detail=detail)
 
 
 def register_exception_handlers(app: FastAPI) -> None:
