@@ -1,3 +1,11 @@
+"""Async Gemini *embedding* client wrapper.
+
+Generative text/JSON is now handled by LangChain (``app/workflows/agents/shared/llm.py``);
+this module only exposes the embedding helper used for the vector DB. It is
+intentionally thin so it can be swapped for a different provider without touching
+business logic.
+"""
+
 from functools import lru_cache
 
 from google import genai
@@ -7,7 +15,6 @@ from app.core.config import get_settings
 
 EMBEDDING_MODEL = "gemini-embedding-001"
 EMBEDDING_DIM = 768   # truncated via output_dimensionality, matches schema.sql `vector(768)`
-GENERATION_MODEL = "gemini-2.5-flash"
 
 _TASK_TYPE_MAP = {
     "retrieval_document": "RETRIEVAL_DOCUMENT",
@@ -35,14 +42,3 @@ async def embed_text(text: str, task_type: str = "retrieval_document") -> list[f
         ),
     )
     return result.embeddings[0].values
-
-
-async def generate_text(prompt: str) -> str:
-    """Calls Gemini's generative model for free-form text (e.g. a short
-    explanation of why certain courses were recommended)."""
-    client = _get_client()
-    response = await client.aio.models.generate_content(
-        model=GENERATION_MODEL,
-        contents=prompt,
-    )
-    return response.text

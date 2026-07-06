@@ -37,28 +37,23 @@ FastAPI backend for the personalized learning recommendation engine. Consumes sk
 
 ## Data Flow
 
-1. **Team 1** posts the skill-analysis JSON to `POST /api/v1/skills/ingest`.
-2. Backend stores it in `skill_profiles` and derives skill gaps.
-3. User submits learning preferences via `POST /api/v1/learning/recommend` (`hours_per_week`, `learning_rate`).
-4. Backend embeds the skill gaps with Gemini, runs a pgvector similarity search over `courses.embedding` (via the `match_courses` RPC) to find the closest-matching courses, and builds a sequenced, month-by-month roadmap, stored in `roadmaps` / `roadmap_courses`.
-5. Frontend fetches the roadmap via `GET /api/v1/learning/roadmap/{user_id}`.
-6. User manually reports progress via `POST /api/v1/learning/progress/{roadmap_course_id}`.
+1. Courses are pre-seeded into the `courses` table (each row embedded with Gemini and stored in `courses.embedding`).
+2. **Team 1's** skill-analysis JSON is posted to `POST /api/v1/employees/{employee_id}/recommendations` — it is used only to build the roadmap and is never persisted.
+3. Backend embeds the `skillGaps` with Gemini, runs a pgvector similarity search over `courses.embedding` (via the `match_courses` RPC) to find the closest-matching courses, then prompts Gemini to arrange them into a **week-by-week** roadmap, and stores it as a JSONB `plan` document in `roadmaps`. The saved roadmap is returned in the same response.
+4. The frontend fetches the saved roadmap via `GET /api/v1/employees/{employee_id}/recommendations`.
 
 ## API Endpoints
 
 | Method | Path | Purpose |
 |--------|------|---------|
-| POST | `/api/v1/skills/ingest` | Ingest skill-analysis JSON from Team 1 |
-| GET | `/api/v1/skills/{user_id}` | Fetch stored skill profile |
-| GET | `/api/v1/courses` | List courses (filter by `category`, `difficulty`) |
-| POST | `/api/v1/courses` | Add a course (MVP seeding helper) |
-| POST | `/api/v1/learning/recommend` | Generate a roadmap from skill gaps + preferences |
-| GET | `/api/v1/learning/roadmap/{user_id}` | Fetch the active roadmap |
-| POST | `/api/v1/learning/progress/{roadmap_course_id}` | Update completion/quiz progress for a course |
+| POST | `/api/v1/courses` | Seed course(s) into the vector DB (each is embedded with Gemini) |
+| POST | `/api/v1/employees/{employee_id}/recommendations` | Generate, store and return a week-by-week roadmap from Team 1's skill-analysis JSON |
+| GET | `/api/v1/employees/{employee_id}/recommendations` | Fetch the saved roadmap |
 | GET | `/health` | Health check |
 
 ## Notes
 
-- No auth layer yet — add JWT verification (mirroring `backend/app/middleware/auth.py`) before this goes beyond MVP/demo.
-- Every course created via `POST /api/v1/courses` is automatically embedded with Gemini (`app/core/gemini_client.py`) and stored in `courses.embedding`. If `GEMINI_API_KEY` is unset, courses are saved without an embedding and matching falls back to naive tag-overlap (`app/repositories/course.py::list_by_skills`).
-- Seed courses via `POST /api/v1/courses` (or a script) before testing `/learning/recommend`, otherwise the roadmap will be empty.
+- No auth layer yet — add JWT verification before this goes beyond MVP/demo.
+- `GEMINI_API_KEY` is required: course embedding, skill-gap vector search, and roadmap generation all depend on it. The embedding step (`gemini-embedding-001`) is mandatory — vector similarity search needs vectors, which can only be produced by an embedding model.
+- Seed courses via `POST /api/v1/courses` (or a script) before generating a roadmap, otherwise there are no courses to plan around.
+- The generated roadmap is stored as a single JSONB `plan` column in `roadmaps`; there are no `skill_profiles` or `roadmap_courses` tables.

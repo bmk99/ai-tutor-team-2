@@ -37,7 +37,11 @@ class CourseResponse(BaseModel):
     enrollment_count: int
 
 
-class CourseListResponse(BaseModel):
+class CourseBulkResponse(BaseModel):
+    """Response body returned after creating courses in bulk via
+    ``POST /api/v1/courses``. Includes the persisted courses and a count."""
+
+    created_count: int
     courses: List[CourseResponse]
 
 

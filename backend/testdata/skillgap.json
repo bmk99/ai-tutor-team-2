@@ -1,0 +1,483 @@
+[
+  {
+    "skill_id": "e8385173-2218-43bf-be95-bf7ba1f071de",
+    "user_id": "02120dd4-9d27-4b79-8d4a-cbe52191a79a",
+    "current_role": "Software Engineer",
+    "targeted_role": "AI Solution Architect",
+    "skills_assessment": {
+      "C#": 8,
+      "LLM": 3,
+      ".NET": 8,
+      "Jira": 6,
+      "LINQ": 7,
+      "Figma": 3,
+      "Python": 3,
+      "n8n.io": 7,
+      "Cursor IDE": 6,
+      "Oracle SQL": 8,
+      "AI Adoption": 5,
+      "Spring Boot": 3,
+      "Unit Testing": 6,
+      "Data Pipelines": 7,
+      "GitHub Copilot": 6,
+      "Security (API)": 6,
+      "API Development": 7,
+      "Brave Search API": 5,
+      "Entity Framework": 7,
+      "Peer Code Review": 6,
+      "Stored Procedures": 7,
+      "Prompt Engineering": 5,
+      "Backend Architecture": 7,
+      "Legacy Modernization": 7,
+      "eCommerce Frameworks": 6,
+      "Database Optimization": 7,
+      "AI Solution Architecture": 4,
+      "Cloud Database Migration": 4
+    },
+    "skills_gap_analysis": [
+      {
+        "skill": "AI Solution Architecture",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Python",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "AI Adoption",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "LLM",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Prompt Engineering",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Machine Learning Fundamentals",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "MLOps",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud Platform Expertise (AWS/Azure/GCP)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud AI/ML Services",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Big Data Technologies",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "ML Frameworks (TensorFlow/PyTorch)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "AI Model Security & Ethics",
+        "requiredLevel": 7
+      }
+    ],
+    "role_alignment": "ALIGNED",
+    "resume_path": "e8385173-2218-43bf-be95-bf7ba1f071de/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-01 11:24:20.509829+00"
+  },
+  {
+    "skill_id": "76cfc2d1-dd20-4898-b013-8d2ab0036b0f",
+    "user_id": "02120dd4-9d27-4b79-8d4a-cbe52191a79a",
+    "current_role": "Intern Software Engineer",
+    "targeted_role": "AI Solution Architect",
+    "skills_assessment": {
+      "AI": 2,
+      "C#": 8,
+      ".NET": 8,
+      "Jira": 6,
+      "LINQ": 7,
+      "Docker": 3,
+      "n8n.io": 8,
+      "eCommerce": 5,
+      "Cursor IDE": 7,
+      "Oracle SQL": 8,
+      "Spring Boot": 3,
+      "Unit Testing": 6,
+      "Cloud Concepts": 5,
+      "Data Pipelines": 7,
+      "GitHub Copilot": 7,
+      "API Development": 7,
+      "API Integration": 7,
+      "Brave Search API": 6,
+      "Entity Framework": 7,
+      "Peer Code Review": 6,
+      "Stored Procedures": 6,
+      "Database Migration": 5,
+      "Prompt Engineering": 6,
+      "Backend Architecture": 7,
+      "Software Engineering": 8,
+      "Database Optimization": 7,
+      "AI Solution Architectures": 4,
+      "LLM (Large Language Models)": 4,
+      "Legacy System Modernization": 7
+    },
+    "skills_gap_analysis": [
+      {
+        "skill": "Machine Learning Fundamentals",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Deep Learning Frameworks (PyTorch/TensorFlow)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Natural Language Processing (NLP)",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Computer Vision (CV)",
+        "requiredLevel": 6
+      },
+      {
+        "skill": "Generative AI / LLM Architectures",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "AI Solution Architectures",
+        "requiredLevel": 10
+      },
+      {
+        "skill": "Cloud Platforms (AWS/Azure/GCP)",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Python Programming",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Containerization (Docker)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "ML Workflow Orchestration (Kubernetes/Airflow)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "MLOps (CI/CD for Machine Learning)",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Big Data Technologies (Spark/Kafka)",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Security in AI/ML Solutions",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Ethical AI / Responsible AI Principles",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Data Engineering for ML",
+        "requiredLevel": 8
+      }
+    ],
+    "role_alignment": "MISALIGNED",
+    "resume_path": "76cfc2d1-dd20-4898-b013-8d2ab0036b0f/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-01 11:51:28.628291+00"
+  },
+  {
+    "skill_id": "dc269de1-ddb0-4db5-ab87-e1cfaabc0c86",
+    "user_id": "3fd9a0a7-865d-4e95-9f19-88020656bf4e",
+    "current_role": "Software Engineer",
+    "targeted_role": "Senior Software Engineer",
+    "skills_assessment": {
+      "Java": 8,
+      "JavaScript": 5,
+      "Spring Boot": 8
+    },
+    "skills_gap_analysis": [],
+    "role_alignment": "ALIGNED",
+    "resume_path": "dc269de1-ddb0-4db5-ab87-e1cfaabc0c86/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-01 13:59:10.833206+00"
+  },
+  {
+    "skill_id": "673928b1-16af-488f-aaab-4b33eb4010a6",
+    "user_id": "3fd9a0a7-865d-4e95-9f19-88020656bf4e",
+    "current_role": "Associate Software Engineer",
+    "targeted_role": "Applied AI Engineer",
+    "skills_assessment": {
+      "K6": 4,
+      "S3": 6,
+      "AWS": 7,
+      "EC2": 6,
+      "ECS": 6,
+      "Git": 7,
+      "PHP": 3,
+      "SNS": 7,
+      "SQL": 6,
+      "SQS": 7,
+      "CSS3": 4,
+      "Java": 8,
+      "Rovo": 3,
+      "HTML5": 4,
+      "JUnit": 6,
+      "MySQL": 5,
+      "DevOps": 6,
+      "Docker": 6,
+      "Lambda": 7,
+      "Oracle": 5,
+      "Python": 6,
+      "Struts": 4,
+      "Angular": 6,
+      "ChatGPT": 4,
+      "Datadog": 4,
+      "FastAPI": 6,
+      "Mockito": 6,
+      "Postman": 6,
+      "VS Code": 6,
+      "Bootstrap": 4,
+      "New Relic": 7,
+      "CloudWatch": 6,
+      "JavaScript": 5,
+      "Spring Boot": 8,
+      "RESTful APIs": 7,
+      "API Contracts": 6,
+      "Elasticsearch": 7,
+      "Observability": 7,
+      "Redis Caching": 7,
+      "Treasure Data": 5,
+      "GitHub Copilot": 4,
+      "CI/CD Pipelines": 6,
+      "Payload Mappings": 6,
+      "Data Traceability": 6,
+      "High Availability": 7,
+      "System Reliability": 7,
+      "Region-aware Filtering": 7,
+      "Self-Service Reporting": 6,
+      "Dead Letter Queues (DLQ)": 7,
+      "Digital Asset Governance": 6,
+      "Legacy Monolithic Systems": 7,
+      "Cloud-Native Architectures": 7,
+      "Event-Driven Architectures": 8,
+      "Licensing Rules Enforcement": 6,
+      "Microservices Architectures": 8,
+      "Asynchronous Multithreaded Processing": 7,
+      "Electronic Messaging Regulations Compliance": 6
+    },
+    "skills_gap_analysis": [
+      {
+        "skill": "Machine Learning Fundamentals",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "ML Frameworks (e.g., TensorFlow/PyTorch/Scikit-learn)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Data Pipelines/ETL",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "AWS SageMaker",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Kubernetes",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "MLOps Principles/Practices",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Datadog",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Deep Learning Fundamentals",
+        "requiredLevel": 6
+      },
+      {
+        "skill": "Generative AI/LLMs Concepts & Prompt Engineering",
+        "requiredLevel": 6
+      },
+      {
+        "skill": "Vector Databases",
+        "requiredLevel": 5
+      },
+      {
+        "skill": "JavaScript",
+        "requiredLevel": 6
+      },
+      {
+        "skill": "MySQL",
+        "requiredLevel": 6
+      },
+      {
+        "skill": "Oracle",
+        "requiredLevel": 6
+      }
+    ],
+    "role_alignment": "MISALIGNED",
+    "resume_path": "673928b1-16af-488f-aaab-4b33eb4010a6/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-02 09:07:57.848763+00"
+  },
+  {
+    "skill_id": "b88f9d6e-2222-43a6-b084-51fbb40fe2ce",
+    "user_id": "02120dd4-9d27-4b79-8d4a-cbe52191a79a",
+    "current_role": "Software Engineer",
+    "targeted_role": "AI Solution Architect",
+    "skills_assessment": {
+      "C#": 8,
+      "SQL": 5,
+      ".NET": 8,
+      "Jira": 6,
+      "LINQ": 7,
+      "n8n.io": 7,
+      "Cursor IDE": 6,
+      "Oracle SQL": 8,
+      "Unit Testing": 6,
+      "Data Pipelines": 7,
+      "GitHub Copilot": 6,
+      "API Development": 7,
+      "Brave Search API": 6,
+      "Entity Framework": 7,
+      "Peer Code Reviews": 6,
+      "Stored Procedures": 7,
+      "Prompt Engineering": 5,
+      "Legacy Modernization": 7,
+      "Software Engineering": 8,
+      "eCommerce Frameworks": 6,
+      "Backend Architectures": 7,
+      "Database Optimization": 7,
+      "Cloud Computing Concepts": 5,
+      "AI Solution Architectures": 5,
+      "Cloud Database Migrations": 6,
+      "LLM (Large Language Models)": 4,
+      "Figma (User Interface Design Comprehension)": 4
+    },
+    "skills_gap_analysis": [
+      {
+        "skill": "Python",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "LLM (Large Language Models)",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "AI Solution Architectures",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "SQL",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Prompt Engineering",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud AI/ML Services (e.g., AWS Sagemaker, Azure ML, GCP AI Platform)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Machine Learning Frameworks (e.g., PyTorch, TensorFlow)",
+        "requiredLevel": 8
+      }
+    ],
+    "role_alignment": "ALIGNED",
+    "resume_path": "b88f9d6e-2222-43a6-b084-51fbb40fe2ce/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-02 12:29:29.165221+00"
+  },
+  {
+    "skill_id": "b63c8e0a-18e9-4e79-8ec5-72d851153962",
+    "user_id": "02120dd4-9d27-4b79-8d4a-cbe52191a79a",
+    "current_role": "Intern Software Engineer",
+    "targeted_role": "Cloud Solutions Architect",
+    "skills_assessment": {
+      "C#": 8,
+      "LLM": 4,
+      ".NET": 8,
+      "Jira": 6,
+      "LINQ": 7,
+      "Figma": 3,
+      "Python": 5,
+      "n8n.io": 7,
+      "Cursor IDE": 6,
+      "Oracle SQL": 8,
+      "AI Adoption": 5,
+      "Spring Boot": 5,
+      "Unit Testing": 6,
+      "GitHub Copilot": 6,
+      "API Development": 7,
+      "Brave Search API": 5,
+      "Entity Framework": 7,
+      "Peer Code Reviews": 6,
+      "Stored Procedures": 7,
+      "Prompt Engineering": 5,
+      "Backend Architecture": 7,
+      "eCommerce Frameworks": 6,
+      "Database Optimization": 8,
+      "Enterprise Applications": 6,
+      "Data Pipeline Automation": 7,
+      "AI Solutions Architecture": 4,
+      "Cloud Database Migrations": 5,
+      "Legacy Enterprise Systems": 8,
+      "Legacy Systems Modernization": 8
+    },
+    "skills_gap_analysis": [
+      {
+        "skill": "Cloud Platform Architecture (AWS/Azure/GCP)",
+        "requiredLevel": 9
+      },
+      {
+        "skill": "Infrastructure as Code (IaC)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud Networking",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud Security (IAM, Data Protection)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Containerization & Orchestration (Docker, Kubernetes)",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Cloud Database Migrations",
+        "requiredLevel": 8
+      },
+      {
+        "skill": "Python",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "Serverless Architecture",
+        "requiredLevel": 7
+      },
+      {
+        "skill": "DevOps & CI/CD for Cloud",
+        "requiredLevel": 7
+      }
+    ],
+    "role_alignment": "MISALIGNED",
+    "resume_path": "b63c8e0a-18e9-4e79-8ec5-72d851153962/resume.pdf",
+    "is_skill_path_completed": "COMPLETED",
+    "created_at": "2026-07-02 12:32:38.708135+00"
+  }
+]
+ 

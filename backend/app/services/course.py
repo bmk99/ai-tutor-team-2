@@ -2,7 +2,7 @@ import asyncio
 import uuid
 
 from app.repositories.course import CourseRepository
-from app.schemas.course import CourseCreate, CourseBulkCreate
+from app.schemas.course import CourseBulkCreate
 from app.core.logging import get_logger
 from app.core.config import get_settings
 from app.core import gemini_client
@@ -24,30 +24,6 @@ def _embedding_text(data: dict) -> str:
 
 
 class CourseService:
-    async def list_courses(self, category: str | None = None, difficulty: str | None = None):
-        repo = CourseRepository()
-        return await repo.list_all(category=category, difficulty=difficulty)
-
-    async def create_course(self, payload: CourseCreate) -> dict:
-        repo = CourseRepository()
-        data = payload.model_dump()
-        data["course_id"] = str(uuid.uuid4())
-
-        if not get_settings().GEMINI_API_KEY:
-            raise ConfigurationException("GEMINI_API_KEY is not configured. Course creation requires LLM embeddings.")
-
-        try:
-            data["embedding"] = await gemini_client.embed_text(
-                _embedding_text(data), task_type="retrieval_document"
-            )
-        except Exception as exc:
-            logger.error("Failed to generate embedding for course", course_name=data["course_name"], exc_info=exc)
-            raise LLMException(f"Failed to generate embedding for course '{data['course_name']}'. Check GEMINI_API_KEY and network connectivity.") from exc
-
-        course = await repo.create(data)
-        logger.info("Course created", course_id=str(course["course_id"]))
-        return course
-
     async def create_courses_bulk(self, payload: CourseBulkCreate) -> list[dict]:
         repo = CourseRepository()
         rows = [p.model_dump() for p in payload.courses]
