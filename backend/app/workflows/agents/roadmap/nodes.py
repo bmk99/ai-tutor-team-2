@@ -165,9 +165,9 @@ async def node_enrich_plan(state: RoadmapState) -> dict:
             )
         enriched_weeks.append(
             {
-                "week_number": week.get("week_number"),
+                "week": week.get("week_number"),
                 "focus": week.get("focus"),
-                "skills_covered": week.get("skills_covered", []),
+                "skills": week.get("skills_covered", []),
                 "activities": week.get("activities", []),
                 "courses": enriched_courses,
             }
